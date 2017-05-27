@@ -1,0 +1,40 @@
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+div.container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #000;
+  display: table;
+}
+
+
+div.slogan {
+  display: table-cell;
+  vertical-align: middle;
+
+  color: #FFF;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  font-size: 300%;
+  font-weight: bold;
+  text-align: center;
+}
