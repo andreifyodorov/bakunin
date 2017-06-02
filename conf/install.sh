@@ -11,9 +11,11 @@ if ! [[ $USER == root ]]; then
 	exit 255
 fi
 
-dir=$(cd $(dirname $0); pwd)
+cd $(dirname $0);
+dir=$(pwd)
 
-for file in $( find . -name '*.conf' ); do
-	path=${file:1}
-	ln -sfv $dir$path $path
+for file in $( find */ -type f ); do
+	ln -sfv $dir/$path /$path
 done
+
+mkdir -p /var/log/nginx
