@@ -14,7 +14,7 @@ fi
 cd $(dirname $0);
 dir=$(pwd)
 
-for file in $( find */ -type f ); do
+for path in $( find */ -type f ); do
 	ln -sfv $dir/$path /$path
 done
 
