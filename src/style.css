@@ -9,6 +9,7 @@ html {
     Arial,
     "Lucida Grande",
     sans-serif;
+  background-color: #000;
 }
 
 
@@ -18,23 +19,23 @@ html, body {
 }
 
 
-div.container {
+.container {
   height: 100%;
+  height: 100vmin;
   width: 100%;
-  position: absolute;
-  background-color: #000;
   display: table;
 }
 
-
-div.slogan {
-  display: table-cell;
-  vertical-align: middle;
-
-  color: #FFF;
-  line-height: 150%;
-  letter-spacing: 0.2px;
-  font-size: 300%;
-  font-weight: bold;
-  text-align: center;
+.bakunin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url("/Bakunin.jpg");
+  background-position-y: -10vmin;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: .66;
 }
