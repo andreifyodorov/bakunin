@@ -16,8 +16,8 @@
 
 #Port 22
 #AddressFamily any
-#ListenAddress 0.0.0.0
-#ListenAddress ::
+ListenAddress 0.0.0.0
+ListenAddress ::
 
 # The default requires explicit activation of protocol 1
 #Protocol 2
@@ -114,7 +114,7 @@
 #PermitUserEnvironment no
 #Compression delayed
 
-ClientAliveInterval 300 
+ClientAliveInterval 300
 ClientAliveCountMax 3
 
 #UseDNS yes
